@@ -58,15 +58,36 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/test-rest-api/url",
+					"raw": "http://localhost:8080/rest-api/people",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"test-rest-api",
-						"url"
+						"rest-api",
+						"people"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tyk Java REST API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/rest-api/movies/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest-api",
+						"movies",
+						"2"
 					]
 				}
 			},
@@ -78,6 +99,16 @@
 				"auth": {
 					"type": "oauth2",
 					"oauth2": [
+						{
+							"key": "clientSecret",
+							"value": "0ZLDcftlTGsmWpcyIABcq96tQS7rdFiE",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "graphql_api",
+							"type": "string"
+						},
 						{
 							"key": "tokenType",
 							"value": "",
@@ -96,16 +127,6 @@
 						{
 							"key": "client_authentication",
 							"value": "body",
-							"type": "string"
-						},
-						{
-							"key": "clientSecret",
-							"value": "qxUj3KZUGD8fzhZF4HZGsjP9LNkWicrz",
-							"type": "string"
-						},
-						{
-							"key": "clientId",
-							"value": "api_1",
 							"type": "string"
 						},
 						{
@@ -135,14 +156,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/test-graphql-api/graphql",
+					"raw": "http://localhost:8080/graph-api/graphql",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"test-graphql-api",
+						"graph-api",
 						"graphql"
 					]
 				}
@@ -155,14 +176,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3030/url",
+					"raw": "http://localhost:3030/people",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "3030",
 					"path": [
-						"url"
+						"people"
 					]
 				}
 			},
@@ -201,7 +222,7 @@
 					"urlencoded": [
 						{
 							"key": "client_id",
-							"value": "api_1",
+							"value": "graphql_api",
 							"type": "text"
 						},
 						{
@@ -211,7 +232,7 @@
 						},
 						{
 							"key": "client_secret",
-							"value": "qxUj3KZUGD8fzhZF4HZGsjP9LNkWicrz",
+							"value": "0ZLDcftlTGsmWpcyIABcq96tQS7rdFiE",
 							"type": "text"
 						}
 					]
