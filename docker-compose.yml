@@ -28,11 +28,13 @@ services:
       KEYCLOAK_ADMIN_PASSWORD: keycloak
       KC_HEALTH_ENABLED: "true"
       KC_LOG_LEVEL: info
-    command: start-dev --hostname-url=http://tyk-keycloak:8080
+    command: start-dev --import-realm --hostname-url=http://tyk-keycloak:8080 
     depends_on:
       - tyk-keycloak-db
     ports:
       - 8001:8080
+    volumes:
+      - ./keycloak-imports:/opt/keycloak/data/import
     networks:
       - tyk
   tyk-dashboard:
