@@ -1,9 +1,8 @@
 {
 	"info": {
-		"_postman_id": "a197dba1-29ae-43f7-9e86-75878a8eac5f",
+		"_postman_id": "ef5616be-007e-4321-af3f-e5931fb8467f",
 		"name": "Tyk POC",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "2501231"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
@@ -58,14 +57,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/rest-api/people",
+					"raw": "http://localhost:8080/express-node-api/people",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"rest-api",
+						"express-node-api",
 						"people"
 					]
 				}
@@ -78,14 +77,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/rest-api/movies/2",
+					"raw": "http://localhost:8080/openapi/movies/2",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"rest-api",
+						"openapi",
 						"movies",
 						"2"
 					]
