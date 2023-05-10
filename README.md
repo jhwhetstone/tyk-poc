@@ -37,10 +37,15 @@ A postman collection provides a simple set of API calls that can be used to test
   - CD to type-pro-docker-demo
   - run `docker-compose -f docker-compose.yml -f docker-compose.mongo.yml up`
  
- Verify that Keycloak starts correctly.  If you see in the debug output, that Keycloak has started correctly, it's because
+ Verify that Keycloak starts correctly.  If you see in the debug output, that Keycloak has exited, it's because
  the database took too long to start because it was being initialized.  In that case, rerun it the docker-compose command.
  
  - Open a browser to the Tyk dashboard:  http://localhost:3000 and fill in sensible values in the initialization form.
+
+ Create an API for each of the services.  
+ For security, use the following configuration:
+
+ ![API Security](security.png)
  
  
 
