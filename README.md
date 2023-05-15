@@ -18,6 +18,11 @@ A postman collection provides a simple set of API calls that can be used to test
 
 # How to build and use this project
 
+Add 
+
+`127.0.0.1      tyk-keycloak` to /etc/hosts
+
+
 - build and run the node-api project from the node-api folder:
   - `npm install`
   - `node index.js` 
